@@ -1,4 +1,4 @@
-# Mihir Chaudhari — Portfolio
+# Mihir Chaudhari - Developer Portfolio
 
 Premium personal portfolio website for **Mihir Chaudhari**, Java Backend Engineer.
 
