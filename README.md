@@ -84,6 +84,15 @@ Then open `http://localhost:8080` in your browser.
 - **GitHub:** [github.com/mihir-31](https://github.com/mihir-31)
 - **LinkedIn:** [linkedin.com/in/mihir-chaudhari-6063b720a](https://www.linkedin.com/in/mihir-chaudhari-6063b720a/)
 
+
+## 🚀 Deployment
+
+This portfolio is automatically deployed using **GitHub Actions** whenever changes are pushed to the `main` branch.
+
+Deployment URL:
+
+https://mihir-31.github.io/
+
 ## License
 
 Personal portfolio — all rights reserved.
