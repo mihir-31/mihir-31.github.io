@@ -8,7 +8,7 @@
     {
       id: 'insurance-dashboard',
       title: 'Insurance Business Processing Dashboard',
-      period: 'Mar 2025 – Present',
+      period: 'March 2025 – March 2026',
       stack: 'Spring Boot Microservices',
       icon: 'fa-solid fa-shield-halved',
       description: 'Enterprise microservices platform integrating with Policy Administration System (PAS) for end-to-end insurance policy workflows with automated business processing.',
@@ -33,6 +33,33 @@
         'Enabled scalable processing of high transaction volumes'
       ],
       technologies: ['Java 8', 'Spring Boot', 'REST APIs', 'Microservices', 'Oracle', 'PL/SQL', 'OpenShift', 'Jenkins', 'CI/CD']
+    },
+    {
+      id: 'customer-portal-modernization',
+      title: 'Customer Portal Revamp',
+      period: 'April 2026 – Present',
+      stack: 'Java 21, Spring Boot, REST APIs',
+      icon: 'fa-solid fa-user-shield',
+      description: 'Revamping a customer self-service portal for Bajaj Life Insurance to manage policies, payments, profile updates, service requests, and policy operations.',
+      overview: 'Working on a customer self-service portal for Bajaj Life Insurance to modernize policy management and customer operations while preserving existing functionality.',
+      features: [
+        'Policy details and premium payment management',
+        'Profile updates and service request handling',
+        'Modernized backend modules with Java 21 migration',
+        'Improved performance, maintainability, and code quality',
+        'AI-assisted migration support using Claude Opus and Claude Sonnet'
+      ],
+      architecture: 'Refactoring legacy Java modules into a modern Spring Boot architecture with REST APIs, Oracle backend integration, and deployment-ready support for OpenShift.',
+      challenges: [
+        'Upgrading from Java 8 to Java 21 without disrupting customer operations',
+        'Preserving existing functionality while modernizing legacy code',
+        'Refactoring backend modules for performance and maintainability'
+      ],
+      impact: [
+        'Accelerated migration from Java 8 to Java 21',
+        'Improved application maintainability and readiness for future enhancements'
+      ],
+      technologies: ['Java 21', 'Spring Boot', 'REST APIs', 'Oracle', 'Maven', 'Git', 'GitHub', 'OpenShift']
     },
     {
       id: 'logistics-docket',

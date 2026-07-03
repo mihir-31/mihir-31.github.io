@@ -83,15 +83,55 @@ Then open `http://localhost:8080` in your browser.
 - **Phone:** +91 7030891636
 - **GitHub:** [github.com/mihir-31](https://github.com/mihir-31)
 - **LinkedIn:** [linkedin.com/in/mihir-chaudhari-6063b720a](https://www.linkedin.com/in/mihir-chaudhari-6063b720a/)
+- **Portfolio:** [mihir-31.github.io/](https://mihir-31.github.io/)
 
 
 ## 🚀 Deployment
 
-This portfolio is automatically deployed using **GitHub Actions** whenever changes are pushed to the `main` branch.
+This portfolio can be deployed on the following platforms:
 
-Deployment URL:
+### GitHub Pages
 
+- Push your code to the `main` branch.
+- Enable **GitHub Pages** from **Settings → Pages**.
+- Deploy using **GitHub Actions** or **Deploy from Branch**.
+
+**Live Demo:**  
 https://mihir-31.github.io/
+
+---
+
+### Vercel
+
+- Import the GitHub repository into Vercel.
+- No build configuration is required for this static website.
+- Click **Deploy**.
+
+---
+
+### Netlify
+
+- Import the GitHub repository or drag and drop the project folder.
+- Publish directory: `/`
+- Click **Deploy**.
+
+---
+
+### Run Locally
+
+```bash
+# Python
+python -m http.server 8080
+
+# Node.js
+npx serve .
+```
+
+Open:
+
+```
+http://localhost:8080
+```
 
 ## License
 

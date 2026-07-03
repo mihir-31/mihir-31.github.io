@@ -25,8 +25,35 @@
   <!-- Deployment testing -->
   <!-- Loading Screen -->
   <div id="loader" class="loader" aria-hidden="true">
-    <div class="loader__inner">
-      <div class="loader__logo">MC</div>
+      <div class="loader__inner">
+      <div class="loader__logo">
+        <!-- Inline SVG </> with gradient stroke and subtle animations -->
+        <svg class="loader__svg" viewBox="0 0 64 64" role="img" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="loaderGrad" x1="0%" x2="100%">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="60%" stop-color="#7C3AED" />
+              <stop offset="100%" stop-color="#00E5FF" />
+            </linearGradient>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3.5" result="coloredBlur" />
+              <feMerge>
+                <feMergeNode in="coloredBlur" />
+                <feMergeNode in="SourceGraphic" />
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- Left chevron -->
+          <path class="loader-path loader-left" d="M22 20 L10 32 L22 44" fill="none" stroke="url(#loaderGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+
+          <!-- Slash -->
+          <path class="loader-path loader-slash" d="M30 18 L40 46" fill="none" stroke="url(#loaderGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+
+          <!-- Right chevron -->
+          <path class="loader-path loader-right" d="M42 20 L54 32 L42 44" fill="none" stroke="url(#loaderGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)" />
+        </svg>
+      </div>
       <div class="loader__bar"><span></span></div>
       <p class="loader__text">Initializing systems</p>
     </div>
@@ -112,8 +139,17 @@
             <div class="orbit-icon orbit-icon--6" title="Git"><i class="fa-brands fa-git-alt"></i></div>
           </div>
           <div class="hero__photo-wrapper">
+            <!-- Glass panel behind the profile to create depth -->
+            <div class="hero__photo-bg" aria-hidden="true"></div>
+
+            <!-- Profile image (kept same src and alt) -->
             <img src="assets/images/profile.png" alt="Mihir Chaudhari — Java Backend Engineer" class="hero__photo" loading="eager" width="400" height="400">
-            <div class="hero__photo-ring"></div>
+
+            <!-- Gradient ring that adds premium glow -->
+            <div class="hero__photo-ring" aria-hidden="true"></div>
+
+            <!-- Decorative overlays (dots/lines) to blend with background theme -->
+            <div class="hero__photo-decor" aria-hidden="true"></div>
           </div>
           <div class="code-editor" aria-label="Animated Java code snippet">
             <div class="code-editor__header">
@@ -171,7 +207,7 @@
             <span class="stat-card__label">Years Experience</span>
           </div>
           <div class="stat-card">
-            <span class="stat-card__number" data-count="2" data-suffix="">0</span>
+            <span class="stat-card__number" data-count="3" data-suffix="">0</span>
             <span class="stat-card__label">Enterprise Projects</span>
           </div>
           <div class="stat-card">
@@ -281,9 +317,22 @@
         <div class="timeline" id="timeline">
           <div class="timeline__item timeline__item--right" data-aos="fade-left">
             <div class="timeline__date">
-              <i class="fa-solid fa-code" aria-hidden="true"></i>
-              <time datetime="2023-09">Sep 2023 – Present</time>
-            </div>
+                <!-- Replaced font-awesome code icon with inline SVG for crisper visuals and subtle animation -->
+                <svg class="svg-code-icon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false" role="img">
+                  <defs>
+                    <linearGradient id="codeGrad" x1="0%" x2="100%">
+                      <stop offset="0%" stop-color="var(--primary)" />
+                      <stop offset="100%" stop-color="var(--accent)" />
+                    </linearGradient>
+                  </defs>
+                  <g fill="none" stroke="url(#codeGrad)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path class="svg-code-left" d="M9.5 7.5L4.5 12l5 4.5" />
+                    <path class="svg-code-slash" d="M11 7l2 10" />
+                    <path class="svg-code-right" d="M14.5 7.5L19.5 12l-5 4.5" />
+                  </g>
+                </svg>
+                <time datetime="2023-09">Sep 2023 – Present</time>
+              </div>
             <div class="timeline__card glass-card">
               <span class="timeline__badge">Current</span>
               <h3 class="timeline__title">Software Developer</h3>
